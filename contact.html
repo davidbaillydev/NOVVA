@@ -60,18 +60,18 @@
 					<li><a href="services.html">Services</a></li>
 					<li class="has-children">
 						<a href="projects.html">Activités</a>
-						<ul class="dropdown">
+						<!-- <ul class="dropdown">
 							<li><a href="#">Commercial Building</a></li>
 							<li><a href="#">Cultural Lifestyle</a></li>
-							<!-- <li class="has-children">
+							<li class="has-children">
 								<a href="#">Dropdown</a>
 								<ul class="dropdown">
 									<li><a href="#">Sub Menu One</a></li>
 									<li><a href="#">Sub Menu Two</a></li>
 									<li><a href="#">Sub Menu Three</a></li>
 								</ul>
-							</li> -->
-						</ul>
+							</li>
+						</ul> -->
 					</li>
 					<li><a href="#"> Idées et Innovations </a></li>
 					<li><a href="index.html#testimonial"> Témoignages </a></li>
@@ -99,7 +99,7 @@
 
 					<div class="intro-desc text-left">
 						<div class="line"></div>
-						<p>Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque.</p>
+						<p>Vous avez un projet en tête ou une question à nous poser ? Nous sommes là pour vous accompagner. Notre équipe dévouée est prête à vous écouter, à comprendre vos besoins et à vous fournir les réponses dont vous avez besoin. Que ce soit pour discuter d'une idée de projet, obtenir des conseils d'experts ou obtenir des informations supplémentaires sur nos services, n'hésitez pas à nous contacter. Nous sommes impatients de vous aider à concrétiser vos idées et de vous offrir une expérience personnalisée et satisfaisante.</p>
 					</div>
 				</div>
 			</div>
@@ -112,7 +112,7 @@
 			<div class="row mb-5 justify-content-center text-center">
 				<div class="col-lg-5">
 					<h2 class="heading">Laissez Votre Message</h2>
-					<p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p class="text-black-50">Contactez-nous dès aujourd'hui et découvrez comment nous pouvons collaborer pour réaliser vos projets les plus ambitieux.</p>
 				</div>
 			</div>
 			<form class="row">
@@ -238,6 +238,11 @@
 
 
 
+	<a href="#top" class="back-to-top" id="backToTopBtn">
+		<svg class="back-to-top-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+		  <path fill="#fff" d="M12 0l8 9h-6v15h-4v-15h-6z"/>
+		</svg>
+	  </a>
 	
 
 
@@ -256,5 +261,17 @@
 	<script src="js/navbar.js"></script>
 	<script src="js/counter.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+		// Script pour afficher ou masquer le bouton "Revenir en haut"
+		window.addEventListener('scroll', function() {
+		  const backToTopBtn = document.getElementById('backToTopBtn');
+	
+		  if (window.pageYOffset > 100) {
+			backToTopBtn.classList.add('show');
+		  } else {
+			backToTopBtn.classList.remove('show');
+		  }
+		});
+	  </script>
 </body>
 </html>
