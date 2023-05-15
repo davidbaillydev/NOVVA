@@ -113,8 +113,8 @@
 		<div class="container">
 			<div class="row border-bottom mb-5 pb-5 justify-content-between">
 				<div class="col-lg-4 align-self-center mb-5">
-					<h2 class="heading mb-4">We create architectural designs</h2>
-					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+					<h2 class="heading mb-4">L'expertise qui sublime vos espaces</h2>
+					<p>Nova Atelier Design, l'énergie créative au service de votre environnement professionnel. Nous repoussons les limites de l'aménagement et du design intérieur pour créer des espaces qui reflètent votre identité et favorisent l'épanouissement de vos équipes. Notre approche novatrice combine expertise technique et sens artistique pour concevoir des solutions uniques et fonctionnelles. En collaborant étroitement avec vous, nous traduisons vos aspirations en réalité, en intégrant des concepts audacieux et des matériaux de qualité. Avec Nova Atelier Design, l'inspiration est au cœur de chaque projet, afin de vous offrir un environnement de travail exceptionnel qui stimule la créativité, favorise la collaboration et propulse votre succès.</p>
 				</div>
 				<div class="col-lg-7">
 					<a href="https://www.youtube.com/watch?v=mwtbEGNABWU" class="video-wrap glightbox">
@@ -131,10 +131,10 @@
 							<i class="flaticon-compass"></i>
 						</div>
 						<div class="text">
-							<h3 class="h6 fw-bold text-black">We provide best services</h3>
-							<p class="text-black-50">Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium.</p>
+							<h3 class="h6 fw-bold text-black">Expertise de pointe</h3>
+							<p class="text-black-50">Notre équipe de professionnels expérimentés possède une expertise approfondie dans le domaine de l'aménagement et du design intérieur. Nous combinons des connaissances techniques solides avec une créativité innovante pour créer des espaces uniques et fonctionnels.</p> <br>
 							<p>
-								<a href="#" class="more-2">Learn more <span class="icon-arrow_forward"></span></a>
+								<!-- <a href="#" class="more-2">Continuez la lecture <span class="icon-arrow_forward"></span></a> -->
 							</p>
 						</div>
 					</div>
@@ -145,10 +145,10 @@
 							<i class="flaticon-plan"></i>
 						</div>
 						<div class="text">
-							<h3 class="h6 fw-bold text-black">We provide best services</h3>
-							<p class="text-black-50">Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium.</p>
+							<h3 class="h6 fw-bold text-black">Approche personnalisée</h3>
+							<p class="text-black-50">Chez Novva Atelier Design, nous comprenons que chaque projet est unique. Nous accordons une grande importance à l'écoute et à la compréhension des besoins spécifiques de nos clients. Notre approche personnalisée nous permet de créer des solutions sur mesure qui répondent parfaitement à leurs attentes.</p>
 							<p>
-								<a href="#" class="more-2">Learn more <span class="icon-arrow_forward"></span></a>
+								<!-- <a href="#" class="more-2">Continuez la lecture <span class="icon-arrow_forward"></span></a> -->
 							</p>
 						</div>
 					</div>
@@ -159,10 +159,10 @@
 							<i class="flaticon-architect"></i>
 						</div>
 						<div class="text">
-							<h3 class="h6 fw-bold text-black">We provide best services</h3>
-							<p class="text-black-50">Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium.</p>
+							<h3 class="h6 fw-bold text-black">Qualité et satisfaction client</h3>
+							<p class="text-black-50">Notre priorité absolue est d'offrir des services de haute qualité, en utilisant des matériaux et des produits de premier choix. Notre souci du détail, notre professionnalisme et notre engagement envers la satisfaction client garantissent une expérience exceptionnelle à chaque étape de notre collaboration.</p>
 							<p>
-								<a href="#" class="more-2">Learn more <span class="icon-arrow_forward"></span></a>
+								<!-- <a href="#" class="more-2">Continuez la lecture <span class="icon-arrow_forward"></span></a> -->
 							</p>
 						</div>
 					</div>
@@ -171,12 +171,12 @@
 		</div>
 	</div>
 
-
+<!-- 
 	<div class="section sec-team sec-4 pb-5">
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-lg-6 mx-auto text-center">
-					<h2 class="heading">We Are The Team</h2>
+					<h2 class="heading">L'ÂME DE NOTRE ÉQUIPE</h2>
 				</div>
 				
 			</div>
@@ -246,12 +246,17 @@
 
 		</div>
 	</div>
-
+ -->
 
 	
 
 
 	<div class="site-footer bg-light">
+		<a href="#top" class="back-to-top" id="backToTopBtn">
+			<svg class="back-to-top-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			  <path fill="#fff" d="M12 0l8 9h-6v15h-4v-15h-6z"/>
+			</svg>
+		  </a>
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-lg-4">
@@ -346,5 +351,18 @@
 	<script src="js/navbar.js"></script>
 	<script src="js/counter.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script>
+		// Script pour afficher ou masquer le bouton "Revenir en haut"
+		window.addEventListener('scroll', function() {
+		  const backToTopBtn = document.getElementById('backToTopBtn');
+	
+		  if (window.pageYOffset > 100) {
+			backToTopBtn.classList.add('show');
+		  } else {
+			backToTopBtn.classList.remove('show');
+		  }
+		});
+	  </script>
 </body>
 </html>
