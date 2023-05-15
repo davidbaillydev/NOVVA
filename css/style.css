@@ -8643,8 +8643,23 @@ textarea.form-control-lg {
 .site-nav {
   position: absolute;
   top: 0;
+  left: 0;
+  background-color: transparent;
+  /* background-color: rgba(22, 22, 23, .8); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 9;
-  width: 100%; }
+  width: 100%; 
+  transition: background-color 0.3s ease;
+
+}
+
+/* nav.site-nav {
+  background-color: rgba(19, 19, 20, .8);
+} */
+
+/* nav.scrolled {
+  background-color: rgba(19, 19, 20, .8);
+} */
 
 .site-nav {
   padding-top: 20px;
@@ -9917,4 +9932,37 @@ a {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.back-to-top:hover .back-to-top-icon {
+  transform: rotate(360deg);
 }

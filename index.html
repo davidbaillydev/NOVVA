@@ -116,7 +116,7 @@
 	</div>
 
 
-	<div class="section sec-1">
+	<div id="section2" class="section sec-1">
 		<div class="container">
 			<div class="row g-0">
 				<div class="col-lg-3">
@@ -568,6 +568,11 @@
 	
 
 	<div class="site-footer bg-light">
+		<a href="#top" class="back-to-top" id="backToTopBtn">
+			<svg class="back-to-top-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			  <path fill="#fff" d="M12 0l8 9h-6v15h-4v-15h-6z"/>
+			</svg>
+		  </a>
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-lg-4">
@@ -670,5 +675,34 @@ fermerAlerte.addEventListener('click', function() {
 
 alerte.style.display = 'block';
 	</script>
+
+
+<script>
+    // Script pour modifier le style du menu lors du défilement
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('site-nav');
+      const section = document.getElementById('section2'); // Changer l'ID de la section selon vos besoins
+      const sectionTop = section.offsetTop;
+
+      if (window.pageYOffset >= sectionTop) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+<script>
+    // Script pour afficher ou masquer le bouton "Revenir en haut"
+    window.addEventListener('scroll', function() {
+      const backToTopBtn = document.getElementById('backToTopBtn');
+
+      if (window.pageYOffset > 100) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+  </script>
 </body>
 </html>
