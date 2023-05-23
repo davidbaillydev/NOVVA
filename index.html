@@ -27,6 +27,22 @@
 	<link rel="stylesheet" href="css/glightbox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preload" href="images/top.mp4" as="video">
+	<!-- Ajoutez cet élément <script> dans la section <head> de votre page HTML -->
+<script>
+    // Préchargement de la vidéo
+    var video = document.getElementById("video");
+    video.addEventListener("loadeddata", function() {
+        // La vidéo est chargée, masquez l'image de préchargement et affichez la vidéo
+        var preloader = document.getElementById("preloader"); // ID de l'image de préchargement
+        preloader.style.display = "none";
+        video.style.display = "block";
+    });
+
+    // Chargement asynchrone de la vidéo
+    document.addEventListener("DOMContentLoaded", function() {
+        video.src = video.getAttribute("src");
+    });
+</script>
 
 	<title>Novva Atelier Design - Aménagement et Conseil en Mobilier de Bureau</title>
 </head>
