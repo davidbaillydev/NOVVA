@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+
+  # This line should *not* be indented
+media_folder: "images" # Media files will be stored in the repo under images/uploads 
+public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
+
+
+collections:
+  - name: "articles" # Nom de votre collection
+    label: "Articles" # Étiquette affichée dans l'interface CMS
+    folder: "content/articles" # Chemin où les fichiers Markdown seront stockés
+    create: true # Autoriser la création d'articles dans l'interface CMS
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Format du slug pour les articles
+    fields:
+      - { label: "Titre", name: "title", widget: "string" } # Champ pour le titre de l'article
+      - { label: "Contenu", name: "body", widget: "markdown" } # Champ pour le contenu de l'article
