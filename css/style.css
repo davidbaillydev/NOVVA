@@ -10229,22 +10229,6 @@ background-color: #FF6600
   transform-origin: center center; /* Point d'origine de la transformation */
 }
 
-/* Styles pour le carousel */
-.carousel {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  max-width: 80%;
-  height: 80%;
-  position: relative;
-}
-
-/* Styles pour les images du carousel */
-.carousel img {
-  max-width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 
 /* Styles du bouton de fermeture */
 .lightbox-close {
@@ -10256,27 +10240,6 @@ background-color: #FF6600
   cursor: pointer;
 }
 
-/* Styles des boutons de navigation */
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  cursor: pointer;
-  z-index: 1;
-  font-size: 16px;
-}
-
-.carousel-prev {
-  left: 20px;
-}
-
-.carousel-next {
-  right: 20px;
-}
 
 /* Lorsque l'input de type checkbox est coché, afficher la lightbox */
 #lightbox-toggle:checked ~ .lightbox {
