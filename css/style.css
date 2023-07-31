@@ -10204,6 +10204,13 @@ background-color: #FF6600
   perspective: 1000px; /* Perspective pour l'effet de 3D */
 }
 
+/* Styles de l'input de type checkbox (masquer visuellement) */
+#lightbox-toggle {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 /* Styles de la fenêtre modale de la lightbox */
 .lightbox {
   position: fixed;
@@ -10222,7 +10229,7 @@ background-color: #FF6600
   transform-origin: center center; /* Point d'origine de la transformation */
 }
 
-/* Styles de l'image dans la lightbox */
+/* Styles du numéro de téléphone dans la lightbox */
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
