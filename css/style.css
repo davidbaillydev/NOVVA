@@ -8878,12 +8878,12 @@ textarea.form-control-lg {
       position: relative;
       color: #000; }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #fc5404; }
+        color: #ffc107; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #fc5404; }
+        color: #ffc107; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -8896,7 +8896,7 @@ textarea.form-control-lg {
       border-radius: 50%;
       border: 1px solid #f8f9fa; }
       .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
-        font-size: 14px;
+        font-size: 18px;
         z-index: 20;
         font-family: "icomoon";
         content: "\e313";
@@ -8920,7 +8920,7 @@ textarea.form-control-lg {
       width: 100%; }
       .site-mobile-menu .site-nav-wrap > li > a {
         padding-left: 20px;
-        font-size: 14px; }
+        font-size: 18px; }
       .site-mobile-menu .site-nav-wrap > li > ul {
         padding: 0;
         margin: 0;
